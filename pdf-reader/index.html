@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       body {
+        
+    background:var(--bg-color);
+    color: var(--text-color);
+          margin: 20;
+          padding: 20;
+          font-family: Arial, sans-serif;
+        }
+        
+        :root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+        .image-list{
+          margin: 20;
+          display: flex;
+          flex-direction: column;
+        }
+        h1 {
+          color: #dd0f0f;
+          text-align: center;
+          font-size: 54px;
+          margin-bottom: 20px;
+        }
+        .btn{
+    display: inline-block;
+    /* padding: 1rem 2.8rem; */
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    /* letter-spacing: .1rem; */
+    font-weight: 600;
+    transition: .5s ease;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+}
+.btn:hover{
+    box-shadow: none;
+}
+        .image-list img{
+          margin-left: 50px;
+          margin-right: 50px;
+          margin-bottom: 10px;
+        }.button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #DD0F0F;
+      color: #FFF;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      font-size: 24px;
+      margin: 10px;
+    }
+    .button-link:hover {
+      background-color: #C40C0C;
+    }
+    @media only screen and (max-width: 600px) {
+      .button-link {
+        font-size: 20px;
+        padding: 8px 16px;
+      }
+    }
+        #video-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 70vh;
+          background-color: #f4f4f4;
+        }
+        video {
+          max-width: 800px;
+          max-height: 600px;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <title>የወርቅነሽ አድማሱ ህክምና ማስረጃ</title>
+</head>
+<body>
+  <h1>የወርቅነሽ አድማሱ ህክምና ማስረጃ</h1>
+  <a href="https://yehikimna-video.netlify.app/" class="btn"><h2>ህክምና ማስረጃ ቪዲዮ</h2></a>
+   <div> <div class="image-list">
+    <img src="0.jpg" alt="0.jpg">
+    <img src="1.jpg" alt="1.jpg">
+    <img src="2.jpg" alt="2.jpg">
+    <img src="3.jpg" alt="3.jpg">
+    <img src="4.jpg" alt="4.jpg">
+    <img src="5.jpg" alt="5.jpg">
+    </div>
+  
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle PDF Viewer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      #pdf-container {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+      }
+      #pdf-viewer {
+        width: 800px;
+        height: 600px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      #toggle-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      #download-link {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        #pdf-container {
+          display: flex;
+        }
+        #pdf-viewer {
+          width: 90vw;
+          height: 90vh;
+        }
+        #download-link {
+          display: block;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggle-button">Toggle PDF Viewer</button>
+    <div id="pdf-container">
+      <div id="pdf-viewer">
+        <embed src="የወርቅነሽ_አድማሱ_ህክምና_ማስረጃ_1.pdf" type="application/pdf" width="100%" height="100%" />
+      </div>
+    </div>
+    <a id="download-link" href="የወርቅነሽ_አድማሱ_ህክምና_ማስረጃ_1.pdf" download>Download PDF</a>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const pdfContainer = document.getElementById('pdf-container');
+      const downloadLink = document.getElementById('download-link');
+
+      toggleButton.addEventListener('click', function() {
+        pdfContainer.style.display = pdfContainer.style.display === 'none' ? 'flex' : 'none';
+      });
+
+      // Check if the device screen width is less than or equal to 768 pixels (mobile view)
+      if (window.innerWidth <= 768) {
+        downloadLink.style.display = 'block';
+      }
+    </script>
+  </body>
+</html> -->
