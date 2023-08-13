@@ -33,7 +33,14 @@
 
     }
 */
-    #video-container {
+        #myvideo{
+     position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; 
+    }
+   /* #video-container {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -51,7 +58,7 @@
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    /*
+      
     #video-container {
       width: 100%;
       height: 100vh;
@@ -74,7 +81,8 @@
 <body>
 <div id="video-container">
   <!-- <div> -->
-    <video controls>
+   <!-- <video controls>-->
+  <video id="myvideo">
       <source src="YouCut_20230712_162910183 (1).mp4" type="video/mp4" />
       <!-- Add additional <source> elements for different video formats -->
     </video>
